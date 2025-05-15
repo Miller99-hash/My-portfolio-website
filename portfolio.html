@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mariam Mhando - Cybersecurity and digital forensics Projects">
+    <meta name="keywords" content="portfolio, projects, computer networks, cybersecurity, web development">
+    <meta name="author" content="Mariam Mhando">
+    <title>Portfolio | Mariam Mhando</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mariam<span>Mhando</span></h1>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="main-nav" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio-hero" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h1>My Portfolio</h1>
+                    <p>Showcasing my projects in Cybersecurity, Network Security and Digital forensics</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio-filter" class="section-padding">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="network">Network Security</button>
+                    <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+                    <button class="filter-btn" data-filter="web">Digital Forenscics</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio-projects" class="section-padding">
+            <div class="container three-column-layout">
+                
+                <article id="project1" class="project-item" data-category="network">
+                    <div class="project-details">
+                        <h3>Network Security</h3>
+                        <div class="project-tags">
+                            <span class="tag">Network Security</span>
+                            <span class="tag">Risk Assessment</span>
+                        </div>
+                        <div class="project-summary">
+                            <p>A comprehensive security assessment of a medium-sized organization's network infrastructure, identifying vulnerabilities and providing recommendations for improvements.</p>
+                            <button class="btn btn-small toggle-details" data-target="details-1">View Details</button>
+                        </div>
+                        <div id="details-1" class="project-details-expanded hidden">
+                            <h4>Project Overview</h4>
+                            <p>This project involved a systematic evaluation of network security posture for a local organization. It covered both physical and logical security aspects of the network infrastructure.</p>
+                            
+                            <h4>Methodologies Used</h4>
+                            <ul>
+                                <li>Network topology mapping and analysis</li>
+                                <li>Vulnerability scanning using industry-standard tools</li>
+                                <li>Security policy review and evaluation</li>
+                                <li>Access control assessment</li>
+                                <li>Security monitoring capability review</li>
+                            </ul>
+                            
+                            <h4>Outcomes</h4>
+                            <p>The assessment resulted in a detailed report highlighting critical vulnerabilities, medium-risk issues, and recommended security enhancements. Implementation of the recommendations led to a significantly improved security posture for the organization.</p>
+                            
+                            <h4>Technologies</h4>
+                            <p>Nmap, Wireshark, OpenVAS, and Custom Python scripts for network analysis</p>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article id="project2" class="project-item" data-category="cyber">
+                    <div class="project-details">
+                        <h3>Phishing Detection System/h3>
+                        <div class="project-tags">
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Digital Monitoring</span>
+                        </div>
+                        <div class="project-summary">
+                            <p>Development of a phishing emails detection system for monitoring security and identifying potential security threats in real-time.</p>
+                            <button class="btn btn-small toggle-details" data-target="details-2">View Details</button>
+                        </div>
+                        <div id="details-2" class="project-details-expanded hidden">
+                            <h4>Project Overview</h4>
+                            <p>This project focused on designing and implementing a real-time phishing detection system capable of monitoring phishing emails in real-time and alerting users on suspicious activities.</p>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Real-time analysis and inspection</li>
+                                <li>Pattern-based phishing detection</li>
+                                <li>Anomaly detection </li>
+                                <li>Alert system </li>
+                                <li>Logging and reporting functionality</li>
+                            </ul>
+                            
+                            <h4>Outcomes</h4>
+                            <p>The system successfully detected various types of email attacks. The project demonstrated effective application of security principles in a practical context.</p>
+                            
+                            <h4>Technologies</h4>
+                            <p>Python, SQLite, Linux</p>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article id="project3" class="project-item" data-category="web">
+                    <div class="project-details">
+                        <h3>Digital forensics</h3>
+                        <div class="project-tags">
+                            <span class="tag">Digital forensics</span>
+                            <span class="tag">Security</span>
+                        </div>
+                        <div class="project-summary">
+                            <p>Developing an incident response mechanism responding to and mitigating secirity breaches.</p>
+                            <button class="btn btn-small toggle-details" data-target="details-3">View Details</button>
+                        </div>
+                        <div id="details-3" class="project-details-expanded hidden">
+                            <h4>Project Overview</h4>
+                            <p>This project involved developing an incident response mechanism responding to and mitigating secirity breaches.</p>
+                            
+                            <h4>Security Features</h4>
+                            <ul>
+                                <li>Incident Identification</li>
+                                <li>Triage and prioritization</li>
+                                <li>Root cause analysis</li>
+                                <li>Secure session management</li>
+                                <li>Data encryption for sensitive information</li>
+                                <li>Security implementation</li>
+                            </ul>
+                            
+                            <h4>Outcomes</h4>
+                            <p>The project served as a practical implementation of proper forensics principles.</p>
+                            
+                            <h4>Technologies</h4>
+                            <p>SIEM, EDR, SOAR, forensic tools, UEBA, xdr</p>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article id="project4" class="project-item" data-category="network">
+                    <div class="project-details">
+                        <h3>Network Segmentation Implementation</h3>
+                        <div class="project-tags">
+                            <span class="tag">Network Security</span>
+                            <span class="tag">Infrastructure</span>
+                        </div>
+                        <div class="project-summary">
+                            <p>Design and implementation of a network segmentation strategy to enhance security and performance in a campus environment.</p>
+                            <button class="btn btn-small toggle-details" data-target="details-4">View Details</button>
+                        </div>
+                        <div id="details-4" class="project-details-expanded hidden">
+                            <h4>Project Overview</h4>
+                            <p>This project focused on redesigning a flat network architecture into a properly segmented network to improve security posture and network performance.</p>
+                            
+                            <h4>Key Components</h4>
+                            <ul>
+                                <li>VLAN implementation for logical segmentation</li>
+                                <li>Firewall configuration for inter-VLAN traffic control</li>
+                                <li>Access control lists (ACLs) implementation</li>
+                                <li>Network address translation (NAT) configuration</li>
+                                <li>Network monitoring and traffic analysis tools</li>
+                            </ul>
+                            
+                            <h4>Outcomes</h4>
+                            <p>The implementation resulted in improved security controls, reduced attack surface, and better network performance. The segmentation strategy effectively isolated sensitive systems and created clear security boundaries.</p>
+                            
+                            <h4>Technologies</h4>
+                            <p> VLANs, ACLs, Firewalls, Subnetting</p>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article id="project5" class="project-item" data-category="cyber">
+                    <div class="project-details">
+                        <h3>Security Awareness Training Platform</h3>
+                        <div class="project-tags">
+                            <span class="tag">Cybersecurity</span>
+                            <span class="tag">Education</span>
+                        </div>
+                        <div class="project-summary">
+                            <p>Development of an interactive platform for cybersecurity awareness training, with modules on common threats and best practices.</p>
+                            <button class="btn btn-small toggle-details" data-target="details-5">View Details</button>
+                        </div>
+                        <div id="details-5" class="project-details-expanded hidden">
+                            <h4>Project Overview</h4>
+                            <p>This project involved creating an educational platform to improve cybersecurity awareness. The platform includes interactive modules, quizzes, and simulated phishing scenarios.</p>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Interactive learning modules on various security topics</li>
+                                <li>Phishing simulation exercises</li>
+                                <li>Progress tracking and assessment</li>
+                                <li>Certification upon completion</li>
+                                <li>Resource library with security guidelines</li>
+                            </ul>
+                            
+                            <h4>Outcomes</h4>
+                            <p>The platform has been successfully implemented, resulting in increased security awareness and a reduction in successful phishing attempts during controlled tests.</p>
+                            
+                            <h4>Technologies</h4>
+                            <p>Phishinh kits, URL spoofing, Anti-virus, Zero Trust, Firewalls, Cloud Security</p>
+                        </div>
+                    </div>
+                </article>
+
+            
+                <article id="project6" class="project-item" data-category="web">
+                    <div class="project-details">
+                        <h3>E-Learning Portal</h3>
+                        <div class="project-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Education</span>
+                        </div>
+                        <div class="project-summary">
+                            <p>Development of a responsive e-learning portal for computer science courses with integrated security features and a user-friendly interface.</p>
+                            <button class="btn btn-small toggle-details" data-target="details-6">View Details</button>
+                        </div>
+                        <div id="details-6" class="project-details-expanded hidden">
+                            <h4>Project Overview</h4>
+                            <p>This project focused on creating an accessible and secure e-learning platform for computer science students, featuring content management, interactive lessons, and assessment tools.</p>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Responsive design for all device types</li>
+                                <li>Secure user authentication system</li>
+                                <li>Interactive lesson modules with multimedia support</li>
+                                <li>Progress tracking and performance analytics</li>
+                                <li>Discussion forums and collaboration tools</li>
+                            </ul>
+                            
+                            <h4>Outcomes</h4>
+                            <p>The portal has been implemented for a computer networks course, receiving positive feedback for its usability and effectiveness in facilitating remote learning during campus closures.</p>
+                            
+                            <h4>Technologies</h4>
+                            <p>HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap, jQuery</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="youtube-tutorial" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2> Project Walkthrough</h2>
+                    <p>Watch a demonstration of my Phishing Detection System implementation</p>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://m.youtube.com/watch?v=93WliZOjQ-4" title="Project Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-image-map" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Areas of Expertise</h2>
+                    <p>Click on different areas to learn more about my skills</p>
+                </div>
+                <div class="image-map-container">
+                    <img src="/placeholder.svg?height=500&width=800" alt="Areas of Expertise" usemap="#expertise-map" class="image-map">
+                    <map name="expertise-map">
+                        <area shape="rect" coords="50,50,250,200" href="#networks" alt="Network Security">
+                        <area shape="rect" coords="300,50,500,200" href="#cybersecurity" alt="Cybersecurity">
+                        <area shape="rect" coords="550,50,750,200" href="#phishing" alt="Phishing Detection">
+                        <area shape="rect" coords="50,250,250,400" href="#monitoring" alt="Network Monitoring">
+                        <area shape="rect" coords="300,250,500,400" href="#penetration" alt="Penetration Testing">
+                    
+                    </map>
+                </div>
+                <div class="expertise-descriptions">
+                    <div id="networks" class="expertise-item">
+                        <h3>Network Security</h3>
+                        <p>Designing and implementing secure network infrastructures with proper segmentation, access controls, and monitoring.</p>
+                    </div>
+                    <div id="cybersecurity" class="expertise-item">
+                        <h3>Cybersecurity</h3>
+                        <p>Vulnerability assessment, threat management, and security policy implementation to protect digital assets.</p>
+                    </div>
+                    <div id="webdev" class="expertise-item">
+                        <h3>Phishing Detection</h3>
+                        <p>Creating a real-time phishing detection plan for phishing emails targeting university students.</p>
+                    </div>
+                    <div id="monitoring" class="expertise-item">
+                        <h3>Network Monitoring</h3>
+                        <p>Implementing tools and systems for continuous monitoring of network traffic and early threat detection.</p>
+                    </div>
+                    <div id="penetration" class="expertise-item">
+                        <h3>Penetration Testing</h3>
+                        <p>Identifying security weaknesses through authorized simulated attacks on systems and networks.</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Mariam<span>Mhando</span></h3>
+                    <p>Cybersecurity and Digital Forensics Engineer</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mhandomaryam09@gmail.com">mhandomaryam09@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+255715036800">+255 715 036 800</a></p>
+                </div>
+                <div class="footer-social">
+                    <h4>Let's connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mariam Mhando All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
